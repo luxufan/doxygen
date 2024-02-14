@@ -341,7 +341,8 @@ endif()
 ##add_library(doxymain STATIC ${GENERATED_SRC}/${lex_file}.l.h)
 ##endforeach()
 
-add_executable(doxygen
+list(APPEND TEST_TARGETS doxygen)
+llvm_multisource(doxygen
     main.cpp
     ${PROJECT_SOURCE_DIR}/templates/icon/doxygen.rc
 )

@@ -19,6 +19,7 @@ else()
     find_package(Doxygen)
 endif()
 
+set(CMAKE_SOURCE_DIR "${CMAKE_SOURCE_DIR}/DynCastOPT/doxygen")
 configure_file(${CMAKE_SOURCE_DIR}/doc_internal/Doxyfile.in "${CMAKE_CURRENT_BINARY_DIR}/Doxyfile" @ONLY)
 
 set(DOC_FILES
